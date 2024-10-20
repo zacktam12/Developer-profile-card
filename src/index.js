@@ -33,12 +33,12 @@ function Avatar() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill skill="JavaScript" emoji="😊" color="red" />
-      <Skill skill="React" emoji="👌" color="blue" />
-      <Skill skill="HTML + CSS" emoji="😎" color="green" />
-      <Skill skill="Git and github" emoji="😍" color="yellow" />
-      <Skill skill="Svelte" emoji="👍" color="grey" />
-      <Skill skill="Web Design" emoji="🙌" color="red" />
+      <Skill skill="JavaScript" />
+      <Skill skill="React" />
+      <Skill skill="HTML + CSS" />
+      <Skill skill="Git and github" />
+      <Skill skill="Svelte" />
+      <Skill skill="Web Design" />
     </div>
   );
 }
