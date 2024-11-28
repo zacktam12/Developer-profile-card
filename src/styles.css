@@ -8,17 +8,37 @@
 
 body {
   font-family: "IBM Plex Mono", sans-serif;
-  background-color: #f7f7f7;
+  background: linear-gradient(135deg, #e3f2fd, #f7f7f7);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 h1 {
   margin-bottom: 12px;
+  font-size: 1.8rem;
+  color: #222;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card {
   width: 450px;
-  margin: 40px;
+  margin: 40px auto;
   border: 4px solid #222;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card::after {
@@ -29,26 +49,40 @@ h1 {
 .avatar {
   width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .data {
   padding: 32px;
   padding-top: 24px;
+  text-align: center;
 }
 
 .skill-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  justify-content: center;
+  gap: 12px;
   margin-top: 16px;
+  padding: 0;
 }
 
 .skill {
-  padding: 2px 12px;
-  border-radius: 5px;
+  padding: 6px 16px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
   font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  background: linear-gradient(90deg, #388e3c, #4caf50);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }

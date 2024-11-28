@@ -25,7 +25,7 @@ const skills = [
   },
   {
     skill: "React",
-    level: "advanced",
+    level: "Advanced",
     color: "#E84F3B",
   },
   {
@@ -34,7 +34,7 @@ const skills = [
     color: "#FF3BBB",
   },
 ];
-function App() {
+const App = () => {
   return (
     <div className="card">
       <Avatar />
@@ -44,12 +44,12 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-function Avatar() {
+const Avatar = () => {
   return <img className="avatar" src="zack.jpg" alt="Avatar" />;
-}
-function Intro() {
+};
+const Intro = () => {
   return (
     <div>
       <h1>Zekarias Tamiru</h1>
@@ -59,9 +59,9 @@ function Intro() {
       </p>
     </div>
   );
-}
+};
 
-function SkillList() {
+const SkillList = () => {
   return (
     <div className="skill-list">
       {skills.map((skill) => (
@@ -69,20 +69,20 @@ function SkillList() {
       ))}
     </div>
   );
-}
+};
 
-function Skill({ skill, color, level }) {
+const Skill = ({ skill, color, level }) => {
   return (
     <div className="skill" style={{ backgroundColor: color }}>
       <span>{skill}</span>
       <span>
         {level === "beginner" && "👶"}
-        {level === "intermediate" && "👍"}
-        {level === "advanced" && "💪"}
+        {level === "Intermediate" && "👍"}
+        {level === "Advanced" && "💪"}
       </span>
     </div>
   );
-}
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
